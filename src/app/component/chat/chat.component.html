@@ -1,0 +1,23 @@
+<nav class="navbar navbar-default navbar-pf" role="navigation">
+    <div class="navbar-header">
+        <a class="navbar-brand" href="/">
+            <p><strong> Chat!</strong></p>
+        </a>
+    </div>
+</nav>
+<div class="container">
+    <br>
+    <div class="row">
+        <input id="name" class="col-md-4" type="text" placeholder="your name">
+        <button id="connect" class="col-md-1 btn btn-primary" type="button" (click)="connect()">connect</button>
+        <br/>
+        <br/>
+        <div class="row">
+            <textarea class="col-md-8" id="chat"></textarea>
+        </div>
+        <div class="row">
+            <input class="col-md-6" id="msg" type="text" placeholder="enter your message">
+            <button class="col-md-1 btn btn-primary" id="send" type="button" [disabled]="disabled">send</button>
+        </div>
+    </div>
+</div>
